@@ -1,0 +1,67 @@
+body {
+  background-color: white;
+}
+
+img {
+  width: 20%;
+  z-index: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.screen-flow {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 100%;
+  margin-top: 20px;
+  margin-left: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.screen-flow:before {
+    content: "";
+    background: -moz-linear-gradient(top, black 10px, rgba(0, 0, 0, 0) 10px), 
+                -moz-linear-gradient(left, black 10px, rgba(0, 0, 0, 0) 10px);
+    background: -webkit-linear-gradient(top, black 10px, rgba(0, 0, 0, 0) 10px), 
+                -webkit-linear-gradient(left, black 10px, rgba(0, 0, 0, 0) 10px);
+    background-size: 100% 20px;
+    background-repeat: repeat-y;
+    height: 100%;
+    width: 20px;
+    display: block;
+    position: absolute;
+    left: -20px;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+.screen-flow:after {
+    content: "";
+    background: -moz-linear-gradient(top, black 10px, rgba(0, 0, 0, 0) 10px),
+                -moz-linear-gradient(right, black 10px, rgba(0, 0, 0, 0) 10px);
+    background: -webkit-linear-gradient(top, black 10px, rgba(0, 0, 0, 0) 10px),
+                -webkit-linear-gradient(right, black 10px, rgba(0, 0, 0, 0) 10px);
+    background-size: 100% 20px;
+    background-repeat: repeat-y;
+    height: 100%;
+    width: 20px;
+    display: block;
+    position: absolute;
+    right: -20px;
+    opacity: 0.5;
+    z-index: -10;
+}

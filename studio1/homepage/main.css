@@ -1,0 +1,30 @@
+html {
+	background-color: #FFE2C7;
+	color: #966A26;
+}
+
+h1 {
+	padding: 40px;
+	font-size: 50px;
+}
+
+h2 {
+	padding-bottom: 30px;
+	font-size: 40px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.project {
+margin: 50px 0;
+font-size: 30px;
+}
